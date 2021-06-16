@@ -1,0 +1,59 @@
+#sound{
+    display: none;    
+}
+
+.container{
+    padding: 45px;    
+    text-align: center;    
+    font: normal 20px arial;
+    background-color: rgba(10, 104, 107, 0.698);
+    width: 100%;
+    height: auto;
+	top: 0;
+}
+
+h2{
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    padding: 0 55px;
+    background-color: rgba(255, 255, 0, 0.082);
+}
+
+h3{
+    color: rgba(246, 0, 0, 0.719);
+    font-size: 200px;
+
+}
+
+select{
+    top: 0;
+    background-color: rgba(128, 255, 0, 0.329);
+    bottom: 50px;
+    width: auto;
+    font-size: 20px;
+    border: 0;
+    vertical-align: 3px;    
+}
+
+button{
+    margin: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.418);
+    font-size: 23px;
+    display: inline-block;
+    font-weight: bold;
+    width: 100px;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+button:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.display{
+	bottom: 50px;
+}
