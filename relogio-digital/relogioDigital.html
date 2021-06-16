@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relogio Digital</title>
+    <style>
+        body {
+            background-color: rgba(0, 255, 0, 0.808);
+        }
+
+        input {
+            font: normal 50px comic queens;
+            color: rgb(0, 255, 0);
+
+            text-align: center;
+            margin-top: 220px;
+            width: 100%;
+            padding: 15px;
+            border: 0;
+        }
+    </style>
+    <script>
+        function relogio() {
+            var data = new Date();
+            var hor = data.getHours();
+            var min = data.getMinutes();
+            var seg = data.getSeconds();
+            var dia = data.getDate();
+            var mes = data.getMonth();
+            var ano = data.getFullYear();
+            var diaSem = data.getDay();
+
+            if (hor < 10) { hor = '0' + hor }
+            if (min < 10) { min = '0' + min }
+            if (seg < 10) { seg = '0' + seg }
+
+            if (dia < 10) { dia = '0' + dia }
+            if (mes < 10) { mes = '0' + mes }
+
+            if (diaSem == 0) {
+                diaSem = 'Domingo'
+            } else if (diaSem == 1) {
+                diaSem = '2ª-Feira'
+            } else if (diaSem == 2) {
+                diaSem = '3ª-Feira'
+            } else if (diaSem == 3) {
+                diaSem = '4ª-Feira'
+            } else if (diaSem == 4) {
+                diaSem = '5ª-Feira'
+            } else if (diaSem == 5) {
+                diaSem = '6ª-Feira'
+            } else {
+                diaSem = 'Sabado'
+            }
+
+
+            var horas = `${hor}:${min}:${seg} <   > ${dia}/${mes}/${ano} <   > ${diaSem}`
+            window.document.getElementById('rel').value = horas;
+        }
+
+        var tempo = setInterval(relogio, 1000);
+    </script>
+</head>
+
+<body>
+    <div><input type="text" id="rel" /></div>
+</body>
+
+</html>

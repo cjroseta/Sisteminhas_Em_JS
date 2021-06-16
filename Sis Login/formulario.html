@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <meta http-equiv="refresh" content="50">
+    <script src="acesso.js"></script>
+    <style>
+        body {
+            background-color: rgba(116, 136, 60, 0.918);
+            font: normal 22px helvetica;
+            color: blanchedalmond;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            color: black;
+        }
+
+        fieldset {
+            background-color: rgb(122, 122, 243);
+            border: 0;
+            margin: 10px;
+        }
+
+        legend {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FORMULARIO</h1>
+    <p>* Campos obrigatorios!</p>
+    <fieldset>
+        <legend>Acesso Restrito</legend>
+        <form name="form">
+            Nome*: <input type="text" name="nome" id="nome" autocomplete="off"><br><br>
+            Senha*: <input type="password" name="senha" id="senha" autocomplete="off"><br><br>
+            <input type="button" value="LOGIN" name="botao" id="botao" onclick="acesso(this.form)">
+            <input type="reset" value="CANCELAR" name="limpar" id="cancelar">
+        </form>
+    </fieldset>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+Sistema de Estacionamento: depois do HTML
+Video 2
+     *Adicionar um evento: capturar o ID-formulario e o evento funciona quando der um SUBMIT a pagina e chama a funcao CadastrarVeiculos;    
+     *Function cadastrarVeiculo: pegar/capturar os valores do modelo e placa do veiculo digitado no html; (.value para ler a posicao da string)
+           *PreventDefault: para mostrar resultados no console; (a partir do console log podera visualizar os resultados no console do navegador)
+     *Pegar o time (var time)
+     *Criar objecto carro, com os atributos modelo(que recebe as informacoes da variavel modelo),  placa (pegando as informacoes da variavel placa), hora(recebe as informacoes da variavel time pegando as opcoes do getHours) e minutos (recebe as informacoes da variavel time com o objeto Date e opcoes do getMinutes)
+
+Video 3    
+     *Variavel - localStorage(armazenar dados no proprio navegador);
+               #localStorage.setItem('a chave', 'o valor') exemplo ('teste', 'Ola, Mundo!'): comanado ou valor para armazenar no navegador;
+               #console.log(localStorage.getItem('teste')): comando para retornar o valor armazenado, sendo que a pagina funciona quando clicar em adicionar, que eh um submit;
+               #localStorage.removeItem('teste'): retorna null, esta correcto, 
+	Como retorna null, fazer um algoritmo para que ele consiga capturar aqueles valores ;
+
+localStorage.setItem('patio') passa o valor como um objeto e armazena como objecto, a partir do JASON transforma em uma string, entao a ser assim (localStorage.setItem('patio', JSON.stringify(carros)) )
+
+Video 4
+       *Pegar o valor do localStorage: que vem em forma de string (localStorage.getItem('patio2')) que tem que ser transformado em objecto(JSON.parse(localStorage.getItem('patio2'))) - So que essa informacao tem que se armazenar numa variavel (var carros = JSON.parse(localStorage.getItem('patio2')))
+       *Capturar o ID-resultados do HTML, para enviar as informacoes com a varivel carrosResultado e JS
+       *
+
+Video 5: Botao finalizar: remover o carro do patio tomando como refencia a placa do veiculo
+       *Passar o parametro na funcao onclick="apagarVeiculo(\''+placa+'\')" e as barra eh para poder interpretar as aspas e o parametro como string;
+       

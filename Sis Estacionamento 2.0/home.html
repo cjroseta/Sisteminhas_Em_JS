@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Estacionameto 2.0</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sistema de Estacionameto 2.0</h1>
+        <hr>
+        <div>
+            <div class="registro">
+                <input type="text" class="txtVeiculo" id="name" placeholder="Digite o nome do veiculo"
+                    autocomplete="off"><br>
+                <select class="txtVeiculo" id="licence" placeholder="Digite a placa do veiculo" autocomplete="off">
+                    <option>Pacote-1: 30min</option>
+                    <option>Pacote-2: 45min</option>
+                    <option selected><strong>Pacote-3: 60min</strong></option>
+                    <option>Pacote-4: 120min</option>
+                    <option>Pacote-5: 180min</option>
+                </select>
+                <br>
+                <button id="send">Registrar</button>
+            </div>
+
+            <div class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Veiculo</th>
+                            <th>Placa</th>
+                            <th>Horario</th>
+                            <th>Acoes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="garage"></tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Sistema de Gestao de Estacionamento</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

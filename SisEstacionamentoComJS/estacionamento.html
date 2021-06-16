@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estacionamento em JS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body onload="mostraPatio()">
+    <div class="container">
+        <div class="seccao1">
+            <h1>Sistema de Estacionamento <small>by: Claudio Roseta</small></h1>
+        </div>
+
+        <div class="box">
+            <div class="seccao2">
+                <form id="formulario">
+                    <div class="model">
+                        <label>Modelo do Veiculo</label></br>
+                        <input type="text" name="modelo" id="modelo" placeholder="Digite o modelo do veiculo"></br>
+                    </div>
+
+                    <div class="placa">
+                        <label>Placa do Veiculo</label></br>
+                        <input type="text" name="placa" id="placa" placeholder="Digite a placa do veiculo">
+                    </div>
+
+                    <button type="submit" class="btn1" title="Se clicar ira adicionar o veiculo.">Adicionar</button>
+                </form>
+            </div>
+
+            <div class="seccao3">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Placa</th>
+                            <th>Entrada</th>
+                            <th>Finalizar</th>
+                            <th>Cronometro</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultados"></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="javaScript.js"></script>
+</body>
+
+</html>

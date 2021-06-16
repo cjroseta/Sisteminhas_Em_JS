@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "cambria";    
+}
+
+
+html,body{
+	height: 100%;
+}
+
+body{	
+	background-color: #c5c7c7a6;
+}
+
+.container{
+    margin: 20px 0;
+    padding: 40px 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    background-color: rgba(73, 3, 124, 0.404);
+    text-align: center;
+}
+
+.registro{
+    display: block;
+}
+
+.tabela{
+
+}
+
+table{
+    width: 800px;
+    margin-top: 15px;    
+	margin-left: auto;
+	margin-right: auto;
+    border-spacing: 0px;
+    text-align: center;
+}
+
+th{
+    border-bottom: 2px rgba(71, 71, 71, 0.472) solid; 
+    background-color: hotpink;
+    padding: 5px;
+    font-size: 23px;
+}
+
+td{
+    border-bottom: 1px rgb(15, 15, 15) solid;
+    padding: 3px;
+    font-size: 20px;
+}
+h1{
+    padding-bottom: 10px;
+}
+
+.txtVeiculo{
+    margin-top: 6px;
+    width: 350px;
+    height: 32px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.198);
+    background: transparent;
+    font-weight: bolder;
+}
+.pacotes{
+    margin-top: 6px;
+    width: 350px;
+    height: 32px;
+    
+    font-size: 18px;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.198);
+    background: transparent;
+}
+#send{
+    text-align: center;    
+    width: 155px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 22px;
+    font-weight: 900;
+}
+
+#send:hover{
+    background-color: rgba(76, 0, 130, 0.267);
+    border-bottom: 3px solid rgba(5, 5, 5, 0.5);
+    font-size: 26px;
+    color: white;
+}
+
+.delete{
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    background-color: rgba(238, 238, 19, 0.774);
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    cursor: pointer;
+    box-shadow: 3px 2px 2px rgba(255, 255, 255, 0.212);
+    font-size: 17px;
+    color: rgb(80, 80, 80);
+    border-radius: 15px;
+}
+
+footer{
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+    border-top: 2px solid rgba(49, 49, 49, 0.555);
+}

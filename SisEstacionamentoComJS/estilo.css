@@ -1,0 +1,91 @@
+body{background-color: antiquewhite;font: normal 18px cambria;padding: 35px;}
+
+.seccao1{    
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;}
+
+.seccao1 small{font-size: 20px;color: rgb(131, 129, 129);}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+}
+
+.seccao2{
+    display:flex;
+    width:30%;
+    margin-right:10px;
+    background-color: rgba(253, 228, 228, 0.267);
+    border-radius: 5px;}
+
+.seccao3{display: flex; width: 65%;}
+
+.formulario{display: flexbox;padding: 10px;}
+
+.model{padding: 10px;}
+
+.placa{padding: 10px;}
+
+.btn1{padding: 10px;}
+
+#formulario label{color: rgb(34, 10, 10); font-size: 22px;}
+
+input[type=text]{
+    height: 35px;
+    width: 340px;
+    border: 3px solid rgba(77, 74, 74, 0.424);
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+ .btn1{
+    font: bold 18px arial;
+    margin: 10px 0 0 120px;
+    color: white;
+    text-align: center;
+    height: 42px;
+    width: 135px;
+    display: block;
+    border-radius: 5px;
+    border: 0 hidden;
+    background-color: rgb(20, 103, 238);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: rgba(20, 104, 238, 0.513);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.363);
+    border-radius: 30px;
+    color: rgb(1, 98, 255);
+    font-size: larger;
+    width: 150px;
+    height: 50px;
+}
+ .btn2{
+    font: bold 16px arial;
+    color: white;
+    text-align: center;
+    height: 35px;
+    width: 120px;
+    display: block;
+    border: 0;
+    background-color: rgb(45, 238, 20);
+    cursor: pointer;
+    border-radius: 5px;
+ }
+
+ .btn2:hover{
+    background-color: rgba(45, 238, 20, 0.411);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.363);
+    border-radius: 20px;
+    color: rgba(255, 2, 2, 0.815);
+}
+
+th{border-bottom: 2px solid rgb(172, 172, 172);background-color: rgba(107, 83, 47, 0.356);text-align: left;padding: 5px;}
+
+table{margin-top: 0;width: 885px;border-collapse: collapse;table-layout: fixed;}
+
+td{padding-top: 8px;font-size: 20px; border-bottom: 1px solid rgb(71, 71, 71);}
